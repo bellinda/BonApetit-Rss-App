@@ -1,0 +1,101 @@
+﻿<Page
+    x:Class="BonApetitRSS.Pages.RecipeDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BonApetitRSS.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Margin="39,59,39,0"
+                    Click="backButton_Click"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" 
+                       Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" 
+                       Margin="0,0,30,40"/>
+            <Button Name="AddToFavourites" 
+                         VerticalAlignment="Top"
+        		        AutomationProperties.ItemType="Navigation Button"
+                         BorderThickness="0" Grid.Column="2" Click="AddToFavourites_Click" Margin="58,22,0,0">
+                <Image Source="/Images/star.png" Height="83" Width="81"/>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="15, 0, 0, 0">
+                <Image>
+                    <Image.Source>
+                        <BitmapImage UriSource="{Binding ImageURL}"/>
+                    </Image.Source>
+                </Image>
+                <TextBlock Text="{Binding Time}" Margin="30" FontSize="46" FontFamily="Gabriola"
+                           TextWrapping="WrapWholeWords"></TextBlock>
+                <Button Name="startSessionButton"  Content="Започни приготвяне" Background="#1CA3D8"
+                        Click="startSessionButton_Click" Margin="0, 50, 0, 0"></Button>
+                <Grid Visibility="Collapsed" Name="additionalButtonsGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Name="readyButton" Content="Готово :)" 
+                            Click="readyButton_Click"></Button>
+                    <Button Grid.Column="1" Name="giveUpButton" Content="Провал :(" 
+                            Click="giveUpButton_Click"></Button>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <Button Name="takePictureButton" Content="Снимай резултата" 
+                                Visibility="Collapsed" Click="takePictureButton_Click"></Button>
+                        <Button Name="shareOnFacebook" Content="Сподели във Facebook" 
+                                Visibility="Collapsed" Click="shareOnFacebook_Click"></Button>
+                    </StackPanel>
+
+                    <Image x:Name="PhotoPreview" Grid.Column="1" Visibility="Collapsed"/>
+                </Grid>
+
+            </StackPanel>
+            <ScrollViewer Grid.Column="1">
+                <StackPanel Margin="50, -20, 0, 0">
+                    <TextBlock Text="Продукти:" Foreground="Beige" FontSize="66" FontFamily="Gabriola" 
+                               Margin="40,40, 0, 0"></TextBlock>
+                    <TextBlock Text="{Binding Ingredients}" FontSize="36" FontFamily="Gabriola" 
+                               TextWrapping="WrapWholeWords"></TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+            <ScrollViewer Grid.Column="2">
+                <StackPanel Margin="50, -20, 20, 0">
+                    <TextBlock Text="Начин на приготвяне:" TextWrapping="Wrap"  Foreground="Beige" 
+                               FontSize="66" FontFamily="Gabriola" Margin="10, 40, 0, 0"></TextBlock>
+                    <TextBlock Text="{Binding PreparationWay}" FontSize="36" FontFamily="Gabriola" 
+                               TextWrapping="WrapWholeWords"></TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

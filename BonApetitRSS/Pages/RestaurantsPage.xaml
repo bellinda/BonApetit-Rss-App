@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="BonApetitRSS.Pages.RestaurantsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BonApetitRSS.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Margin="39,59,39,0" 
+                    Style="{StaticResource NavigationBackButtonNormalStyle}"
+                    VerticalAlignment="Top"
+                    AutomationProperties.Name="Back"
+                    AutomationProperties.AutomationId="BackButton"
+                    AutomationProperties.ItemType="Navigation Button"
+                    Click="backButton_Click"/>
+            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" 
+                       Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" 
+                       Margin="0,0,30,40"/>
+        </Grid>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Margin="30, 0, 0, 0">
+                <TextBlock Text="Ресторанти в твоя град:" FontFamily="Gabriola" FontSize="56" 
+                           Foreground="#EDA668"></TextBlock>
+
+                <ListView Name="gridView" 
+                          Background="Transparent"
+                          Foreground="White"
+                          VerticalContentAlignment="Center"
+                          IsItemClickEnabled="True"
+                          ScrollViewer.VerticalScrollMode="Enabled">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="FontSize" Value="24"></Setter>
+                            <Setter Property="BorderThickness" Value="0"></Setter>
+                            <Setter Property="Padding" Value="0"></Setter>
+                            <Setter Property="Margin" Value="0"></Setter>
+                            <Setter Property="FontFamily" Value="Gabriola"></Setter>
+                            <!--Comic Sans MS-->
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Title}" TextWrapping="WrapWholeWords" 
+                                           FontSize="56"></TextBlock>
+                                <TextBlock Text="{Binding Address}"></TextBlock>
+                                <TextBlock Text="{Binding Phone}"></TextBlock>
+                                <TextBlock Text="{Binding Email}"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

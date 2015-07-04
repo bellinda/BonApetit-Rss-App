@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="e:\visual studio projects\bonapetitrss\bonapetitrss\obj\x86\debug\intermediatexaml\bonapetitrss.exe" HashGuid="b91a876b-1b84-fbc6-d445-9341c4a15876" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="e:\visual studio projects\bonapetitrss\packages\htmlagilitypack.1.4.9\lib\netcore45\htmlagilitypack.dll" HashGuid="e8cf0f9d-ac45-cdb5-bce5-7ce81a506bdf" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

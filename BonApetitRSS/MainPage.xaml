@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="BonApetitRSS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BonApetitRSS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          ScrollViewer.HorizontalScrollMode="Enabled"
+          ScrollViewer.IsHorizontalRailEnabled="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width=".3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/wallpaper-food.jpg" Opacity="0.3"/>
+            </Grid.Background>
+            <TextBlock x:Name="pageTitle" Text="Bon Apetit RSS" 
+                        VerticalAlignment="Top" IsHitTestVisible="false" TextWrapping="NoWrap" 
+                        FontSize="100" Margin="34,61,0,0" Foreground="#DEE0B8"
+                        TextLineBounds="Full" FontFamily="Forte"/>
+            <TextBlock Text="By Gabriela Angelova"
+                       FontFamily="Gabriola" FontSize="25" Width="200" Height="100" Margin="10,737,841,-69"></TextBlock>
+        </Grid>
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Основно меню" FontFamily="Gabriola" FontSize="56" FontWeight="Bold" Foreground="#EFB837" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,70,-37,30" Width="342"/>
+            <Grid Height="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".3*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button  x:Name="timeButton" Style="{StaticResource NavigationBackButtonNormalStyle}" 
+        		VerticalAlignment="Top"
+        		AutomationProperties.ItemType="Navigation Button"
+                         Grid.Column="0" Margin="22,0,0,0" Click="timeButton_Click"/>
+                <TextBlock Text="Минута е много" Grid.Column="1"  FontFamily="Gabriola" FontSize="40" Margin="24,0,-24,0"/>
+            </Grid>
+            <Grid Height="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".3*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button  x:Name="allRecepiesButton" Style="{StaticResource NavigationBackButtonNormalStyle}" 
+        		VerticalAlignment="Top" Click="allRecepiesButton_Click"
+        		AutomationProperties.ItemType="Navigation Button"
+                         Grid.Column="0" Margin="22,0,0,0"/>
+                <TextBlock Text="Всички рецепти" Grid.Column="1"  FontFamily="Gabriola" FontSize="40" Margin="24,0,-24,0"/>
+            </Grid>
+            <Grid Height="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".3*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button  x:Name="favouriteRecepiesButton" Style="{StaticResource NavigationBackButtonNormalStyle}" 
+        		VerticalAlignment="Top"
+        		Click="favouriteRecepiesButton_Click"
+        		AutomationProperties.ItemType="Navigation Button"
+                         Grid.Column="0" Margin="22,0,0,0"/>
+                <TextBlock Text="Любими рецепти" Grid.Column="1"  FontFamily="Gabriola" FontSize="38" Margin="24,0,-24,0"/>
+            </Grid>
+            <Grid Height="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".3*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button  x:Name="myRecepiesButton" Style="{StaticResource NavigationBackButtonNormalStyle}" 
+        		        VerticalAlignment="Top"
+                         Click="myRecepiesButton_Click"
+        		        AutomationProperties.ItemType="Navigation Button"
+                         Grid.Column="0" Margin="22,0,0,0"/>
+                <TextBlock Text="Моите рецепти" Grid.Column="1"  FontFamily="Gabriola" FontSize="40" Margin="24,0,-24,0"/>
+            </Grid>
+            <Grid Height="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".3*"></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button  x:Name="rssButton" Style="{StaticResource NavigationBackButtonNormalStyle}" 
+        		VerticalAlignment="Top"
+                Click="rssButton_Click"
+        		AutomationProperties.ItemType="Navigation Button"
+                         Grid.Column="0" Margin="22,0,0,0"/>
+                <TextBlock Text="RSS новини" Grid.Column="1"  FontFamily="Gabriola" FontSize="38" Margin="24,0,-24,0"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

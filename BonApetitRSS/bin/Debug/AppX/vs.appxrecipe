@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>W510-PC</Machine>
+    <WindowsUser>W510</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>654ab5c9-9311-48dc-a4d0-9ea0ec1521d9</PackageIdentityName>
+    <IntermediateOutputPath>E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>E6AFD0A88ACA3C80F41A56C41263C36C41942B9042A4C22A3DF2B52614F3ABFA</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>654ab5c9-9311-48dc-a4d0-9ea0ec1521d9_1.0.0.0_neutral__k6w8cejfph6q2</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>654ab5c9-9311-48dc-a4d0-9ea0ec1521d9_k6w8cejfph6q2!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>654ab5c9-9311-48dc-a4d0-9ea0ec1521d9</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=W510</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-13T10:12:05.674</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\BonApetitRSS.exe">
+      <PackagePath>BonApetitRSS.exe</PackagePath>
+      <Modified>2015-06-13T10:12:03.727</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\packages\HtmlAgilityPack.1.4.9\lib\NetCore45\HtmlAgilityPack.dll">
+      <PackagePath>HtmlAgilityPack.dll</PackagePath>
+      <Modified>2015-06-10T19:54:25.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\connection.png">
+      <PackagePath>Images\connection.png</PackagePath>
+      <Modified>2015-06-10T19:46:54.269</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\input.png">
+      <PackagePath>Images\input.png</PackagePath>
+      <Modified>2015-06-10T19:46:54.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\invalid-input.png">
+      <PackagePath>Images\invalid-input.png</PackagePath>
+      <Modified>2015-06-10T19:46:54.290</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\mushroom.png">
+      <PackagePath>Images\mushroom.png</PackagePath>
+      <Modified>2015-06-10T19:46:54.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\photo.png">
+      <PackagePath>Images\photo.png</PackagePath>
+      <Modified>2015-06-10T19:46:54.308</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\star.png">
+      <PackagePath>Images\star.png</PackagePath>
+      <Modified>2015-06-10T19:46:54.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\camera.ico">
+      <PackagePath>Images\camera.ico</PackagePath>
+      <Modified>2015-06-10T19:46:54.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\food.jpg">
+      <PackagePath>Images\food.jpg</PackagePath>
+      <Modified>2015-06-10T19:46:54.276</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\tasty-food.jpg">
+      <PackagePath>Images\tasty-food.jpg</PackagePath>
+      <Modified>2015-06-10T19:46:54.323</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\Images\wallpaper-food.jpg">
+      <PackagePath>Images\wallpaper-food.jpg</PackagePath>
+      <Modified>2015-06-10T19:46:54.339</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.023</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\Pages\AboutPage.xbf">
+      <PackagePath>Pages\AboutPage.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\Pages\AllRecipesPage.xbf">
+      <PackagePath>Pages\AllRecipesPage.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.036</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\Pages\Favourites.xbf">
+      <PackagePath>Pages\Favourites.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.042</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\Pages\MyRecepies.xbf">
+      <PackagePath>Pages\MyRecepies.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.066</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\Pages\NoTimePage.xbf">
+      <PackagePath>Pages\NoTimePage.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.072</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\Pages\RecipeDetailsPage.xbf">
+      <PackagePath>Pages\RecipeDetailsPage.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.079</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\Pages\RestaurantsPage.xbf">
+      <PackagePath>Pages\RestaurantsPage.xbf</PackagePath>
+      <Modified>2015-06-10T20:17:52.085</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\BonApetitRSS.xr.xml">
+      <PackagePath>BonApetitRSS.xr.xml</PackagePath>
+      <Modified>2015-06-10T20:17:51.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Visual Studio Projects\BonApetitRSS\BonApetitRSS\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-06-13T10:12:04.379</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
